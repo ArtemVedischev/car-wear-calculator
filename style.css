@@ -1,0 +1,39 @@
+.clearfix:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+.wrap {
+	box-sizing: border-box;
+	width: 95%;
+	margin: 1% auto;
+}
+.input__data, .output_data {
+	box-sizing: border-box;
+	width: 50%;
+}
+.input__data {
+	background-color: #ccc;
+	float: left;
+}
+.input__data div {
+	text-align: right;
+}
+.input__data label {
+	float: left;
+}
+#typeCar {
+	width: 60%;
+}
+option {
+	width: 60%;
+}
+.output__data {
+	float: right;
+	width: 50%;
+	text-align: justify;
+}
+.input__data, .output__data {
+	padding: 1em;
+	box-sizing: border-box;
+}

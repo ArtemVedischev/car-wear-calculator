@@ -1,0 +1,57 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>111</title>
+<link rel="stylesheet" href="style.css"/>
+<script src="js.js"></script>
+</head>
+<body>
+	<fieldset>
+	<legend>Расчет процента износа</legend>
+	<div class="wrap clearfix">
+		<div class="input__data">
+			<h2>Исходные данные</h2>
+			<div>
+				<label for="productDate">Дата начала эксплуатации</label>
+				<input type="date" id="productDate">
+			</div>		
+			<div>
+				<label for="crushDate">Дата ДТП</label>
+				<input type="date" id="crushDate">
+			</div>
+			<div>
+				<label for="odomentr">Пробег на момент ДТП</label>
+				<input type="number" id="odomentr">
+			</div>
+			<div>
+				<label for="typeCar">Категория (вид) автомобиля</label>
+				<select id="typeCar" size="1">
+					<optgroup label="Легковые автомобили">
+						<option value="1">ВАЗ (Lada), ГАЗ, ЗАЗ, ТагАЗ, УАЗ</option>
+						<option value="2">Brilliance, BYD, Chery, Derways, FAW, Geely, Great Wall, Hafei, Haima, Lifan, Luxgen, Xin Kai</option>
+						<option value="3">Aston Martin, Bentley,Bugatti, Ferrari, Jaguar, Maserati, Porsche Audi, BMW, Mercedes-Benz, Mini, Rover Alfa Romeo, Citroen, Fiat, Ford, Opel, Peugeot, Renault, Saab, SEAT, Skoda, Volkswagen, Volvo</option>
+						<option value="4">Acura, Buick, Cadillac, Chevrolet, Chrysler, Dodge, Hummer, Infiniti, Jeep, Lexus, Lincoln, Mercury, Pontiac</option>
+						<option value="5">Hyundai, Kia, Ssang Yong, Daewoo</option>
+						<option value="6">Daihatsu, Honda, Isuzu, Mazda, Mitsubishi, Nissan, Subaru, Suzuki, Toyota</option>
+					</optgroup>
+					<optgroup>
+						<option></option>
+						<option></option>
+						<option></option>
+						<option></option>
+						<option></option>
+						<option></option>
+						<option></option>
+					</optgroup>					
+				</select>
+				<button id="getResult" onclick="getResult()">Рассчитать процент износа</button>
+			</div>
+		</div>
+		<div class="output__data">
+			<h2>Результат расчета</h2>
+			<div id="result"></div>
+		</div>
+	</div>
+	</fieldset>
+</body>
+</html>
